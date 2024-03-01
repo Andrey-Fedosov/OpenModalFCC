@@ -1,0 +1,64 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding-top: 150px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgb(132, 255, 150);
+}
+
+.content {
+  width: 40%;
+  height: auto;
+  position: relative;
+  z-index: 3;
+  background-color: rgb(246, 195, 29);
+  overflow: auto;
+  left: 30%;
+  top: 10%;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px #7b7b7b;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+
+.close-modal-icon {
+  /* display: inline-block; */
+  cursor: pointer;
+  font-size: 40px;
+  float: right;
+  font-weight: bold;
+  /* align-self: right; */
+}
+
+.popup-header {
+  padding: 4px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.popup-body {
+  padding: 2px 16px;
+  min-height: 200px;
+}
+
+.footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
